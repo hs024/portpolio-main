@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu website</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+
+    <style>
+        .grid-container {
+            display: grid;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 20px;
+
+        }
+
+        .grid-item {
+            background-color: transparent;
+
+            text-align: center;
+            padding: 20px;
+        }
+
+
+        @media screen and (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+
+
+
+        img {
+            width: 20vw;
+            background: rgba(255, 255, 255, .1);
+            border: .4rem solid rgba(255, 255, 255, .4);
+            border-radius: 10%;
+            filter: drop-shadow(0 0 3rem #ff00ee);
+            animation: Zoom 1s ease forwards;
+            transform: scale(0);
+            animation-delay: 2s;
+        }
+        @media(max-width:768px) {
+            img{
+        width: 45vw;
+        margin-top: 3rem;
+    }
+        }
+
+        @keyframes Zoom {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+
+            }
+        }
+
+        span {
+            font-weight: bolder;
+            color: #ff00ee;
+        }
+
+        .home2 {
+            padding: 10rem 9% 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 1.4rem;
+            margin: 1rem 0;
+            transform: translateX(100px);
+            opacity: 0;
+            animation: SlideLeft 1s ease forwards;
+            animation-delay: 1s;
+        }
+
+        p a {
+            color: rgba(10, 10, 246, 0.879);
+            font-weight: 400;
+        }
+
+        @keyframes SlideLeft {
+            0% {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">Himanshu </a>
+        <i class="bx bx-menu" id="menu"></i>
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="#">Projects</a>
+            <!-- <a href=""></a> -->
+            <a href="">Contact</a>
+
+        </nav>
+
+    </header>
+    <section class="home2">
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="1mg.png" alt="" srcset="">
+                <div class="text-animation">
+                    <h3>Desert Duel: Sands of Conquest (Python)</h3>
+                </div>
+                <p>"Desert Duel: Sands of Conquest" is an adrenaline-pumping two-player game where combatants engage in
+                    fierce
+                    battles until one emerges victorious. Set in the unforgiving desert terrain, players strategically
+                    maneuver and
+                    employ quick reflexes to outwit their opponent. Developed using Python, utilizing object-oriented
+                    programming
+                    (OOP) principles and data structures and algorithms (DSA), this game showcases the power of Python
+                    for game
+                    development. Additionally, it incorporates file handling for seamless gameplay experiences. <br>
+                    <a href="https://github.com/hs024/streetfight-main">Check out the game on GitHub</a>
+                </p>
+
+
+            </div>
+
+
+
+            <div class="grid-item"><img src="jp.png" alt="" srcset=""></div>
+
+            <div class="grid-item">
+                <div class="text-animation">
+                    <h3> Timeless Arcade Arena (Python) </h3>
+                </div>
+                <p> "Timeless Arcade Arena" offers a collection of classic games crafted using Python and various
+                    libraries including Tkinter, Pygame, while adhering to object-oriented programming (OOP) principles, data
+                    structures and
+                    algorithms (DSA), mathematical computations, and file handling. Dive into a world of nostalgia with
+                    timeless
+                    favorites like <span> Tic Tac Toe, Egg Catcher, Rock Paper Scissors, and the thrilling Jumpy Pikachu
+                        adventure.</span>
+
+                    These games not only entertain but also demonstrate the versatility of Python in game development
+                    and
+                    showcase the integration of essential programming concepts for immersive gameplay experiences.<br>
+                    <!-- <a href="">Check out the game on GitHub</a> -->
+                </p>
+            </div>
+
+
+
+
+
+            <div class="grid-item"><img src="sp.png" alt="" srcset="">
+                <div class="text-animation">
+                    <h3>Space Ship Battle: Defend the Galaxy (Python) </h3>
+                </div>
+                <p> "Space Ship Battle: Defend the Galaxy" immerses players in an epic interstellar conflict where they
+                    command a
+                    space ship against waves of invading aliens. Leveraging Python's versatility and incorporating
+                    concepts from
+                    the previous projects such as object-oriented programming (OOP), data structures and algorithms
+                    (DSA),
+                    mathematical computations, and file handling, this game delivers a thrilling and action-packed
+                    experience.
+                    <br>
+                    <a href="https://github.com/hs024/spaceinvader-main">Check out the game on GitHub</a>
+                </p>
+            </div>
+            <div class="grid-item">
+             <br>   <br><img src="st2.png" alt="" srcset="">
+                <br><br><br><img src="st.png" alt="" srcset="">
+
+            </div>
+            <div class="grid-item">
+                <div class="text-animation">
+                    <br><br><br><br>
+                    <h3>Fashion Hub (website)
+                    </h3>
+                </div>
+                <p> Your Ultimate Destination for Men's Apparel" is a sleek and intuitive web platform, offering a
+                    seamless shopping
+                    experience for men's clothing. Developed using HTML, CSS, JavaScript, and backend frameworks like
+                    Django or
+                    Flask, this website features user authentication, browsing through a diverse range of clothing
+                    options, cart
+                    management, secure checkout, order tracking, and account management functionalities.<br>
+                    <!-- <a href="">Check out the website on GitHub</a> -->
+                </p>
+            </div>
+            <div class="grid-item"><img src="this.png" alt="" srcset="">
+                <div class="text-animation">
+                    <h3>Portpolio (website)</h3>
+                </div>
+                <p> The site you are currently seeing.<br>
+                    <a href="https://github.com/hs024/portpolio">Check out the website on GitHub</a>
+                </p>
+            </div>
+            <div class="grid-item">
+                <br><img src="netflix.png" alt="" srcset="">
+                
+                <p> 
+                    <!-- <a href="">Check out the website on GitHub</a> -->
+                </p>
+            </div>
+            <div class="grid-item"><div class="text-animation">
+                <h3> Netflix (website)</h3>
+            </div>
+                <p>The project is a Netflix clone homepage created using HTML and CSS. It mimics the layout and design
+                    of the Netflix homepage, displaying a grid of movie and TV show thumbnails, along with navigation
+                    elements such as search bar, user profile icon, and category tabs.</p>
+            </div>
+             <div class="grid-item"><img src="st.png" alt="" srcset="">
+                <div class="text-animation">
+                    <h3> </h3>
+                </div>
+                <p> <br>
+                    <a href="">Check out the game on GitHub</a>
+                </p>
+            </div>
+            <div class="grid-item">
+                <div class="text-animation">
+                    <h3> Animal World</h3>
+                </div>
+                <img src="animal world.png" alt="" srcset="">
+                <p> A website using Django  <br>
+                    <a href="https://github.com/hs024/animalnavbar">Check out the game on GitHub</a>
+                </p>
+            </div>
+            <div class="grid-item"><img src="2img.png" alt="" srcset="">
+                <div class="text-animation">
+                    <h3> </h3>
+                </div>
+                <p> <br>
+                    <a href="">Check out the game on GitHub</a>
+                </p>
+            </div> 
+            <div class="grid-item">
+                <!-- <img src="2img.png" alt="" srcset=""> -->
+                <!-- <div class="text-animation"> -->
+                    <div class="text-animation">
+                        <h3> DON'T SEE ANYTHING INTERESTED CHECK GITHUB FOR ALL PROJECT </h3>
+                    </div>
+                    <DIV><H4>They IS MY INITIAL PROJECTs</H4></DIV>
+            </div> 
+            <div class="grid-item">
+                <!-- <img src="2img.png" alt="" srcset=""> -->
+                <!-- <div class="text-animation"> -->
+                    <div class="text-animation">
+                        <h3> <a href="https://github.com/hs024">GITHUB LINK</a></h3>
+                        <!-- <h3> DON'T SEE ANYTHING INTERESTED CHECK GITHUB FOR ALL PROJECT </h3> -->
+                    </div>
+                    <!-- <DIV><H4>They IS MY INITIAL PROJECTs</H4></DIV> -->
+            </div> 
+
+        </div>
+    
+        
+        
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

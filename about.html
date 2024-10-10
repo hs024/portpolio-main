@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu website</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="icon.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+<style>
+    .home{
+        justify-content: left;
+        padding-left: 20px;
+        /* padding-top: 10px; */
+    }
+.gridview{
+    display:grid;
+    grid-template-areas:"myarea myarea2 myarea3";
+    grid-gap: 50px;
+    /* margin-left: 0px; */
+    /* margin-top: 50px; */
+    margin-left: 0px;
+    margin-top: 5vh;
+}
+.item1{
+    grid-area: myarea;
+    /* margin-left: 0px;
+    padding-left:0px; */
+
+}
+
+.item2{
+    grid-area: myarea2;
+}
+.item3{
+    grid-area: myarea3;
+}
+.text-content p table,th,td,tr{
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: SlideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes SlideLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
+}
+/* @media(max-width:768px){
+    .gridview{
+    display: block;
+    
+    }
+    .item2{
+        margin-top: 50px;
+    }
+    .item3{
+        margin-top: 50px;
+    }
+    .skill{
+        display: list-item;
+        margin: auto;
+    }
+    ul li{
+        margin: auto;
+    }
+    table,th,td,tr{
+        margin: auto;
+    }
+} */
+
+th,td{
+    border:2px solid whitesmoke;
+    padding: 2px;
+}
+
+ul li{
+    font-size: 1.4rem;
+
+    margin: 1rem 0;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: SlideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+.skill {
+/* display: ; */
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+font-size: 1rem;
+    /* margin: 1rem 0; */
+    transform: translateX(100px);
+    opacity: 0;
+    animation: SlideLeft 1s ease forwards;
+    animation-delay: 1s;
+    
+}
+.skill li{
+margin: 5px;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="" class="logo">Himanshu </a>
+        <i class="bx bx-menu" id="menu"></i>
+        <nav class="navbar">
+
+            <a href="index.html">Home</a>
+            <a href="#">About Me</a>
+            <a href="project.html">Projects</a>
+            <!-- <a href=""></a> -->
+            <a href="">Contact</a>
+
+        </nav>
+
+    </header>
+    <section class="home" style="margin-left: 0px;">
+        <div class="text-content" style="margin-left: 0px;">
+            <!-- <table> -->
+<!-- <tr> -->
+<!-- <th rowspan="8"> -->
+<div class="gridview" style="margin-left: 0px;">
+<div class="item1">
+
+<!--     <h1>Himanshu sharma</h1> -->
+    <div class="text-animation"> <h2>Key Skills</h2></div>
+    <ul class="skill" type="disc">
+<li>Python</li>
+<li>C/C++</li><li>MySql</li></ul>
+<ul class="skill" type="disc">
+<li>Web Development (HTML, CSS, Javascript, Bootstrap)</li>
+</ul><ul class="skill" type="disc">
+<li>Data Structure and Algorithm</li>
+
+
+
+
+
+
+    </ul>
+    <p>Aspiring developer with a passion for Python programming seeking opportunities to
+        leverage expertise in web development while actively pursuing knowledge and practical experience in artificial
+        intelligence (AI) and machine learning (ML) technologies to contribute to innovative projects and solutions.
+    </p>
+    <!-- <div class="text-animation"> <h3>Currently I'm pursuing B.Tech Computer Science</h3></div> -->
+    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, assumenda nemo voluptatum omnis
+        inventore eaque qui laboriosam autem molestiae asperiores, consequatur doloribus beatae excepturi
+        blanditiis est ut, dignissimos accusamus quisquam velit sit? Ad sed beatae tempora deserunt, doloremque
+        ea rerum qui, libero expedita modi ullam?</p> -->
+        
+        
+        
+        
+        
+        
+        <div class="social-media">
+            <a href=""><i class="bx bxl-linkedin" style="--clr:7"></i></a>
+            <a href=""><i class="bx bxl-instagram" style="--clr:7"></i></a>
+            <a href=""><i class="bx bxl-youtube" style="--clr:7"></i></a>
+            <a href=""><i class="bx bxl-twitter" style="--clr:7"></i></a>
+        </div>
+        </div>
+        <!-- </th>
+            <th><p>COURSE/DEGREE</p></th><th><p>SCHOOL/UNIVERSITY</p></th><th><p>GRADE/SCORE</p></th><th><p>YEAR</p></th> -->
+            <!-- </tr> -->
+            <!-- </table> --> 
+           <div class="item2">
+            <div class="text-animation"> <h2>Academics</h2></div>
+            <p>
+                <table  >
+                  <tr>
+                      <th>&nbsp; COURSE/DEGREE &nbsp;</th><th> &nbsp;SCHOOL/UNIVERSITY </th><th>&nbsp; GRADE/SCORE </th><th>&nbsp; YEAR </th>
+                    </tr>
+<tr>
+    <td>&nbsp;10</td><td> &nbsp; K.G.D.S.Saraswati Vidya Mandir</td><td> &nbsp; 96.8%</td><td>&nbsp;2019</td>
+
+</tr>
+<tr>
+    <td> &nbsp; 12</td><td>&nbsp; K.G.D.S.Saraswati Vidya Mandir</td><td>&nbsp; 94.4%</td><td> &nbsp;2021</td>
+
+</tr>
+<tr>
+    <td>&nbsp; B.Tech</td><td>&nbsp; H.R. Institute Of Technology</td><td> &nbsp;not define</td><td>&nbsp; 2021-pursuing</td>
+
+</tr>
+                </table>
+            </p>
+<br><br>
+            <div class="text-animation"> <h2>Interests
+            </h2></div>
+            <ul>
+                <li><p>Artificial intelligence/Machine Learning</p>
+                    
+                    </li>
+                <li><p>Developing game using python</p></li>
+                <li><p>Playing Chess (1300+ rating)</p></li>
+            </ul>
+
+
+
+        </div>
+    <br>
+        <div class="item3">
+
+            <div class="text-animation"> <h2>Achievements & Awards</h2></div>
+       <ul type="square">
+<li>Certified <b> Python Developer by HackerRank</b>, demonstrating mastery in Python programming and adeptness in
+    complex problem-solving</li>
+<li>Proficient in handling big data with Python libraries such as PySpark and Pandas, accredited by the YBI
+    Foundation for demonstrated expertise in data processing and analysis at scale.</li>
+<li>Top <b>10% ranking </b>in Python skill test on LinkedIn, showcasing exceptional proficiency.
+</li>
+<li>Soft Pro certified in web development and Tkinter GUI design</li>
+<li>Demonstrated proficiency by completing the <b> Google-certified</b> Fundamentals of Digital Marketing course.
+</li>
+
+       </ul>
+            
+
+        </div>
+    </div>
+
+    </section>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
